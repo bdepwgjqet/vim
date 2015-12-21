@@ -13,6 +13,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'taglist.vim'
+Plugin 'vim-scripts/Visual-Mark'
+Plugin 'plasticboy/vim-markdown'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -90,6 +93,11 @@ set fileencoding=utf-8
 "use the following code try to decode one by one
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
+" xml
+au FileType xml exe ":silent %!xmllint --encode utf-8 --format --recover - 2>/dev/null"
+" json
+au FileType json exe ":%!python3 -m json.tool"
+
 set completeopt=longest,menu
 
 " ctags
@@ -106,8 +114,3 @@ nmap wm :WMToggle<cr>
 " cscope
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 cs add /home/bdep__/code/acmt/cscope.out /home/bdep__/code/acmt
-
-" xml
-au FileType xml exe ":silent %!xmllint --encode utf-8 --format --recover - 2>/dev/null"
-" json
-au FileType json exe ":%!python3 -m json.tool"
