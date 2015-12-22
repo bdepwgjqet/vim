@@ -18,6 +18,7 @@ Plugin 'vim-scripts/Visual-Mark'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'python.vim'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'jlanzarotta/bufexplorer' 
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -57,19 +58,9 @@ syntax on
 syntax enable
 
 "line number
-set nu
-
-"auto indent
-set ai
-
-set ruler
-
-"c
-set ci
-set nocp
+"auto indent c
+set nu,ai,ruler,ci,nocp,smartindent
 set backspace=indent,eol,start
-
-set smartindent
 
 "set tab with 4 space
 set tabstop=4
@@ -98,21 +89,26 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 " xml
 au FileType xml exe ":silent %!xmllint --encode utf-8 --format --recover - 2>/dev/null"
 " json
-au FileType json exe ":%!python3 -m json.tool"
+au FileType json exe ":%!python -m json.tool"
 
 set completeopt=longest,menu
-
-" ctags
-set tags=/home/bdep__/code/acmt/tags
 
 " taglist
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 
-" winManager
-let g:winManagerWindowLayout='FileExplorer|TagList'
-nmap wm :WMToggle<cr>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Key Maps
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" cscope
-set cscopequickfix=s-,c-,d-,i-,t-,e-
-cs add /home/bdep__/code/acmt/cscope.out /home/bdep__/code/acmt
+"noremap no recursive
+
+"vmap - take effect in visual mode
+
+"imap - take effect in insert mode
+
+"nmap - take effect in normal mode
+
+"cmap - take effect in command-line/ex mode
+cmap BE BufExplorer<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
