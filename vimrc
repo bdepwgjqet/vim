@@ -16,6 +16,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'taglist.vim'
 Plugin 'vim-scripts/Visual-Mark'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'python.vim'
+Plugin 'davidhalter/jedi-vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
