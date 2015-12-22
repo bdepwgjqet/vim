@@ -96,15 +96,16 @@ let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Key Maps
 "nore no recursive
 "vmap - take effect in visual mode
 "imap - take effect in insert mode
 "nmap - take effect in normal mode
 "cmap - take effect in command-line/ex mode
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "nnoremap
 nnoremap .be :BufExplorer<CR>
 nnoremap .ff :CtrlP<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
