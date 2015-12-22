@@ -1,11 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home'
-let g:netrw_dirhist_2='/'
-let g:netrw_dirhist_3='/home/bdep__/code'
-let g:netrw_dirhist_4='/home/bdep__/code/fondue'
-let g:netrw_dirhist_5='/home/bdep__/code'
-let g:netrw_dirhist_6='/home/bdep__/code/ivy'
-let g:netrw_dirhist_7='/home/bdep__/code/ivy/ivy'
-let g:netrw_dirhist_8='/home/bdep__/code/ivy/ivy/spiders'
-let g:netrw_dirhist_9='/home/bdep__/.vim'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/bdep__/code'
+let g:netrw_dirhist_2='/home/bdep__/code/ivy'
+let g:netrw_dirhist_3='/home/bdep__/code/ivy/ivy'
+let g:netrw_dirhist_4='/home/bdep__/code/ivy/ivy/extractor'

@@ -19,6 +19,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'python.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'jlanzarotta/bufexplorer' 
+Plugin 'kien/ctrlp.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -78,6 +79,11 @@ set fileencoding=utf-8
 "use the following code try to decode one by one
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
+"gui font
+if has("win32")
+    set guifontwide=NSimSun
+endif
+
 " xml
 au FileType xml exe ":silent %!xmllint --encode utf-8 --format --recover - 2>/dev/null"
 " json
@@ -91,16 +97,14 @@ let Tlist_Exit_OnlyWindow=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Key Maps
+"nore no recursive
+"vmap - take effect in visual mode
+"imap - take effect in insert mode
+"nmap - take effect in normal mode
+"cmap - take effect in command-line/ex mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"noremap no recursive
-
-"vmap - take effect in visual mode
-
-"imap - take effect in insert mode
-
-"nmap - take effect in normal mode
-
-"cmap - take effect in command-line/ex mode
-cmap BE BufExplorer<CR>
+"nnoremap
+nnoremap .be :BufExplorer<CR>
+nnoremap .ff :CtrlP<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
