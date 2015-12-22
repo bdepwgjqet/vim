@@ -59,30 +59,22 @@ syntax enable
 
 "line number
 "auto indent c
-set nu,ai,ruler,ci,nocp,smartindent
+"replace tab with 4 space
+set nu ai ruler ci nocp smartindent expandtab
 set backspace=indent,eol,start
 
 "set tab with 4 space
 set tabstop=4
-
 "set indent with 4 space
 set shiftwidth=4
-
 "set back with 4 space
 set softtabstop=4
-
-"replace tab with 4 space
-set expandtab
-
 "vim inner encode
 set encoding=utf-8
-
 "vim for terminal encode
 set termencoding=utf-8
-
 "vim for file encode
 set fileencoding=utf-8
-
 "use the following code try to decode one by one
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
