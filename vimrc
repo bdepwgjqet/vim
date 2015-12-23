@@ -16,6 +16,10 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'taglist.vim'
 Plugin 'vim-scripts/Visual-Mark'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'python.vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'jlanzarotta/bufexplorer' 
+Plugin 'kien/ctrlp.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -54,62 +58,52 @@ syntax on
 syntax enable
 
 "line number
-set nu
-
-"auto indent
-set ai
-
-set ruler
-
-"c
-set ci
-set nocp
+"auto indent c
+"replace tab with 4 space
+set nu ai ruler ci nocp smartindent expandtab
 set backspace=indent,eol,start
-
-set smartindent
 
 "set tab with 4 space
 set tabstop=4
-
 "set indent with 4 space
 set shiftwidth=4
-
 "set back with 4 space
 set softtabstop=4
-
-"replace tab with 4 space
-set expandtab
-
 "vim inner encode
 set encoding=utf-8
-
 "vim for terminal encode
 set termencoding=utf-8
-
 "vim for file encode
 set fileencoding=utf-8
-
 "use the following code try to decode one by one
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+
+"gui font
+if has("win32")
+    set guifontwide=NSimSun
+endif
 
 " xml
 au FileType xml exe ":silent %!xmllint --encode utf-8 --format --recover - 2>/dev/null"
 " json
-au FileType json exe ":%!python3 -m json.tool"
+au FileType json exe ":%!python -m json.tool"
 
 set completeopt=longest,menu
-
-" ctags
-set tags=/home/bdep__/code/acmt/tags
 
 " taglist
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 
-" winManager
-let g:winManagerWindowLayout='FileExplorer|TagList'
-nmap wm :WMToggle<cr>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Key Maps
+"nore no recursive
+"vmap - take effect in visual mode
+"imap - take effect in insert mode
+"nmap - take effect in normal mode
+"cmap - take effect in command-line/ex mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" cscope
-set cscopequickfix=s-,c-,d-,i-,t-,e-
-cs add /home/bdep__/code/acmt/cscope.out /home/bdep__/code/acmt
+"nnoremap
+nnoremap .be :BufExplorer<CR>
+nnoremap .ff :CtrlP<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
