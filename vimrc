@@ -20,6 +20,8 @@ Plugin 'python.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'jlanzarotta/bufexplorer' 
 Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/tComment'
+Plugin 'mrtazz/DoxygenToolkit.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -107,5 +109,18 @@ let Tlist_Exit_OnlyWindow=1
 "nnoremap
 nnoremap .be :BufExplorer<CR>
 nnoremap .ff :CtrlP<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Doxygen Toolkit
+let g:DoxygenToolkit_briefTag_pre="@synopsis  " 
+let g:DoxygenToolkit_paramTag_pre="@param " 
+let g:DoxygenToolkit_returnTag="@returns   " 
+let g:DoxygenToolkit_blockHeader="" 
+let g:DoxygenToolkit_blockFooter="" 
+let g:DoxygenToolkit_authorName="bdepwgjqet[at]gmail.com" 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
