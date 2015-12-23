@@ -67,7 +67,9 @@ set nu ai ruler ci nocp smartindent expandtab
 set backspace=indent,eol,start
 set completeopt=longest,menu
 "default size
-set lines=50 columns=100
+if has("gui_running")
+    set lines=80 columns=120
+endif
 "set tab with 4 space
 set tabstop=4
 "set indent with 4 space
