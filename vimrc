@@ -94,6 +94,7 @@ endif
 au FileType xml exe ":silent %!xmllint --encode utf-8 --format --recover - 2>/dev/null"
 " json
 au FileType json exe ":%!python -m json.tool"
+py import json
 
 " taglist
 let Tlist_Show_One_File=1
@@ -127,4 +128,4 @@ let g:DoxygenToolkit_authorName="bdepwgjqet[at]gmail.com"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "template
-au BufNewFile *.py 0r template/python.template
+au BufNewFile *.py 0r ~/.vim/template/python.template
