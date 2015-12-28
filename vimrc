@@ -93,8 +93,7 @@ endif
 " xml
 au FileType xml exe ":silent %!xmllint --encode utf-8 --format --recover - 2>/dev/null"
 " json
-au FileType json exe ":%!python -m json.tool"
-py import json
+au FileType json exe ":%!python ~/.vim/utils/fjson.py"
 
 " taglist
 let Tlist_Show_One_File=1

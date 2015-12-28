@@ -1,2 +1,7 @@
+### pthon
+*.pyc
+
+### bundles installed
 /bundle
+
 .netrwhist
