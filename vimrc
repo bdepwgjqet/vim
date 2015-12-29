@@ -1,5 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bdep's vimrc
+" use :help first
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " global var
@@ -14,4 +15,4 @@ for f in split(glob(g:runcom . "/**/*.vimrc"))
 endfor
 
 " template
-au BufNewFile * exec ":0r ".g:template."/".&ft
+au BufNewFile * :silent! exec ":0r ".g:template."/".&ft

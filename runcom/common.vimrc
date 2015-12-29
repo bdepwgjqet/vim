@@ -32,7 +32,7 @@ set completeopt=longest,menu
 
 "default size
 if has("gui_running")
-    set lines=80 columns=120
+    set lines=60 columns=110
 endif
 
 

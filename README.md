@@ -1,3 +1,3 @@
 #vim
 
-sync vim config file
+bdep's vimrc
