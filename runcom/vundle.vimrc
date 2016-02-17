@@ -12,16 +12,31 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
+"
 Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'pangloss/vim-javascript'
+
 Plugin 'taglist.vim'
+
 Plugin 'vim-scripts/Visual-Mark'
+
 Plugin 'plasticboy/vim-markdown'
+
 Plugin 'python.vim'
+
+" autocompletion
 Plugin 'davidhalter/jedi-vim'
+
+" python ide
+Plugin 'klen/python-mode'
+
 Plugin 'jlanzarotta/bufexplorer' 
+
 Plugin 'kien/ctrlp.vim'
+
 Plugin 'vim-scripts/tComment'
+
 Plugin 'mrtazz/DoxygenToolkit.vim'
 
 " The following are examples of different formats supported.
