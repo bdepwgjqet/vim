@@ -68,6 +68,8 @@ endif
 au FileType xml exe ":silent %!xmllint --encode utf-8 --format --recover - 2>/dev/null"
 " json
 au FileType json exe ":%!python " . g:utils . "/fjson.py"
+" html
+au FileType html setlocal ts=2 sw=2 sts=2
 
 " taglist
 let Tlist_Show_One_File=1
