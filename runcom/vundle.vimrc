@@ -17,7 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'pangloss/vim-javascript'
 
-"Plugin 'taglist.vim'
+" Plugin 'taglist.vim'
 
 Plugin 'vim-scripts/Visual-Mark'
 
@@ -29,7 +29,7 @@ Plugin 'python.vim'
 Plugin 'davidhalter/jedi-vim'
 
 " python ide
-Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
 
 Plugin 'jlanzarotta/bufexplorer' 
 
