@@ -72,5 +72,5 @@ au FileType json exe ":%!python " . g:utils . "/fjson.py"
 au FileType html setlocal ts=2 sw=2 sts=2
 
 " taglist
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
+" let Tlist_Show_One_File=1
+" let Tlist_Exit_OnlyWindow=1

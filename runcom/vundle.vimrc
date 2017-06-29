@@ -17,7 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'pangloss/vim-javascript'
 
-Plugin 'taglist.vim'
+"Plugin 'taglist.vim'
 
 Plugin 'vim-scripts/Visual-Mark'
 
