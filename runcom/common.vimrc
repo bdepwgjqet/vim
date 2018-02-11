@@ -35,6 +35,8 @@ if has("gui_running")
     set lines=60 columns=110
 endif
 
+"set color
+:color desert
 
 "set tab with 4 space
 set tabstop=4
