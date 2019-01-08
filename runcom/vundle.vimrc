@@ -23,6 +23,10 @@ Plugin 'vim-scripts/Visual-Mark'
 
 Plugin 'plasticboy/vim-markdown'
 
+Plugin 'fatih/vim-go'
+
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+
 Plugin 'python.vim'
 
 " autocompletion
@@ -38,6 +42,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/tComment'
 
 Plugin 'mrtazz/DoxygenToolkit.vim'
+
+Plugin 'nvie/vim-flake8'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
