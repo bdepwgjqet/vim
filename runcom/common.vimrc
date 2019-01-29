@@ -7,6 +7,9 @@ if !exists("g:syntax_on")
     syntax enable
 endif
 
+" set scroll binding during split
+"set scb
+
 "line number
 set nu
 
