@@ -23,6 +23,10 @@ Plugin 'vim-scripts/Visual-Mark'
 
 Plugin 'plasticboy/vim-markdown'
 
+Plugin 'fatih/vim-go'
+
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+
 Plugin 'python.vim'
 
 " autocompletion

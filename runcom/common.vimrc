@@ -17,7 +17,7 @@ set nu
 set ci
 
 "replace tab with 4 space
-set expandtab
+"set expandtab
 
 set nocp
 
