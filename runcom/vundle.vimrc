@@ -25,6 +25,8 @@ Plugin 'plasticboy/vim-markdown'
 
 Plugin 'fatih/vim-go'
 
+Plugin 'ycm-core/YouCompleteMe'
+
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 Plugin 'python.vim'
@@ -75,3 +77,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Go Lint
+autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow
